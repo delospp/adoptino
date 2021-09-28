@@ -1,6 +1,7 @@
 <template>
   <div class="login">
-    <div class="mt-5 login-content">
+    <div class="mt-5 sm login-content">
+      <b-img src="https://github.com/delospp/adoptino/blob/master/src/components/img/adoptino.png?raw=true" fluid alt="Responsive image" style="width:150px"></b-img>
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
           id="input-group-1"
@@ -22,6 +23,7 @@
             id="input-2"
             v-model="form.name"
             type="contraseña"
+            placeholder="Ingrese su contraseña"
             required
           ></b-form-input>
         </b-form-group>        
@@ -32,8 +34,8 @@
             id="checkboxes-4"
             :aria-describedby="ariaDescribedby"
           >
-            <b-form-checkbox value="me">Acepto términos y condiciones</b-form-checkbox>
-            <b-form-checkbox value="that">Quiero recibir información de Adoptino en mi correo</b-form-checkbox>
+            <b-form-checkbox value="me" >Acepto términos y condiciones</b-form-checkbox>
+            <b-form-checkbox value="that">Quiero recibir información<br> de Adoptino en mi correo</b-form-checkbox>
           </b-form-checkbox-group>
         </b-form-group>
 
@@ -82,5 +84,6 @@
     padding: 15px;
     max-width: 400px;
     border-radius: 10px;
+    
   }
 </style>
