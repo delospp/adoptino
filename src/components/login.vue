@@ -4,15 +4,15 @@
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group
           id="input-group-1"
-          label="Email address:"
+          label="Correo:"
           label-for="input-1"
-          description="We'll never share your email with anyone else."
+          description="No compartiremos su información personal con nadie"
         >
           <b-form-input
             id="input-1"
             v-model="form.email"
             type="email"
-            placeholder="Enter email"
+            placeholder="Ingrese su correo electronico"
             required
           ></b-form-input>
         </b-form-group>
@@ -21,7 +21,7 @@
           <b-form-input
             id="input-2"
             v-model="form.name"
-            type="password"
+            type="contraseña"
             required
           ></b-form-input>
         </b-form-group>        
@@ -32,13 +32,13 @@
             id="checkboxes-4"
             :aria-describedby="ariaDescribedby"
           >
-            <b-form-checkbox value="me">Check me out</b-form-checkbox>
-            <b-form-checkbox value="that">Check that out</b-form-checkbox>
+            <b-form-checkbox value="me">Acepto términos y condiciones</b-form-checkbox>
+            <b-form-checkbox value="that">Quiero recibir información de Adoptino en mi correo</b-form-checkbox>
           </b-form-checkbox-group>
         </b-form-group>
 
-        <b-button type="submit" variant="primary" class="mr-2">Submit</b-button>
-        <b-button type="reset" variant="danger">Regresar</b-button>
+        <b-button type="submit" variant="dark" class="mr-2">Ingresar</b-button>
+        <b-button type="reset" variant="dark">Regresar</b-button>
       </b-form>      
     </div>
   </div>
@@ -78,7 +78,7 @@
     align-content: center;
   }
   .login .login-content{
-    background-color: aqua;
+    background-color: #F7B034;
     padding: 15px;
     max-width: 400px;
     border-radius: 10px;
